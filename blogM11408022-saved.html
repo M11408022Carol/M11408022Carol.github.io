@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【中東局勢連載】伊朗戰爭：大腦與肌肉的博弈</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        iran: {
+                            gold: '#C5A059',
+                            dark: '#0A0A0B',
+                            card: '#161618',
+                            accent: '#E23E57',
+                            muted: '#8E8E93'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F2F2F7;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scroll-indicator {
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(to bottom, #C5A059, transparent);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark/60 to-dark"></div>
+            <img src='https://opal.google/board/blobs/61820b68-f0a7-412c-b48d-1fa633cdebd4' alt='media_1' class="w-full h-full object-cover scale-105 animate-pulse-slow opacity-60" />
+        </div>
+        
+        <div class="relative z-10 max-w-5xl px-6 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 border border-iran-gold/30 rounded-full bg-iran-gold/10 backdrop-blur-sm">
+                <span class="text-iran-gold font-display text-sm tracking-widest uppercase">Special Series: Middle East Focus</span>
+            </div>
+            <h1 class="text-5xl md:text-8xl font-display font-extrabold mb-6 leading-tight text-gradient">
+                伊朗戰爭：<br/><span class="text-white">大腦與肌肉的博弈</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-iran-muted max-w-3xl mx-auto font-light leading-relaxed mb-8">
+                這不是一場單純的電影，而是一部更新了 40 多年的連載影集。揭開德黑蘭權力遊戲的神秘面紗。
+            </p>
+            <div class="flex flex-col items-center gap-4">
+                <div class="flex items-center gap-3 text-iran-gold/80 mb-2">
+                    <span class="w-8 h-[1px] bg-iran-gold/50"></span>
+                    <span class="font-display tracking-widest text-xs uppercase">Student ID: M11408022</span>
+                    <span class="w-8 h-[1px] bg-iran-gold/50"></span>
+                </div>
+                <div class="scroll-indicator animate-bounce"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        
+        <!-- Intro Section -->
+        <section class="mb-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-white flex items-center justify-center gap-4">
+                    <span class="h-1 w-12 bg-iran-accent rounded-full"></span>
+                    序言
+                    <span class="h-1 w-12 bg-iran-accent rounded-full"></span>
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-300 first-letter:text-5xl first-letter:font-bold first-letter:text-iran-gold first-letter:mr-3 first-letter:float-left">
+                    提到「伊朗戰爭」，很多人腦中浮現的是飛彈與荒漠，但其實背後的劇本比你想的還要複雜。這場博弈不僅關乎宗教與地緣，更是一場關於「生存進化」的漫長長跑。
+                </p>
+            </div>
+        </section>
+
+        <!-- Chapter 1: Two Versions -->
+        <section class="mb-32">
+            <div class="flex items-end justify-between mb-12">
+                <div>
+                    <h3 class="text-iran-gold font-display font-bold text-lg mb-2">CHAPTER 01</h3>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white italic">第一章：說的是哪場「伊朗戰爭」？</h2>
+                </div>
+                <div class="hidden md:block text-right">
+                    <span class="text-6xl font-display font-black text-white/5 uppercase">Tactics</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-500 hover:-translate-y-2 hover:border-iran-gold/40 group">
+                    <div class="w-12 h-12 bg-iran-accent/20 rounded-xl flex items-center justify-center mb-6 text-iran-accent group-hover:bg-iran-accent group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-white">懷舊版：傳統肌肉碰撞</h4>
+                    <p class="text-gray-400 leading-relaxed">1980 年代那場打了 8 年、讓人想起一戰壕溝戰的「兩伊戰爭」。那是純粹的體力活，兩國在邊界用最原始的武力互毆。</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-500 hover:-translate-y-2 hover:border-iran-gold/40 group">
+                    <div class="w-12 h-12 bg-iran-gold/20 rounded-xl flex items-center justify-center mb-6 text-iran-gold group-hover:bg-iran-gold group-hover:text-black transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-white">現代版：大腦博弈</h4>
+                    <p class="text-gray-400 leading-relaxed">現在進行式！重點在於精密的「影子戰爭」（Shadow War）。伊朗透過代理人放火，配合無人機、駭客與精密暗殺。</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-iran-gold p-8 rounded-3xl transition-all duration-500 hover:scale-[1.02]">
+                    <div class="w-12 h-12 bg-black/20 rounded-xl flex items-center justify-center mb-6 text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-black italic font-display tracking-tight">關鍵字：抵抗之弧</h4>
+                    <p class="text-black/80 leading-relaxed font-medium">包含真主黨、哈瑪斯及胡塞武裝，形成了一張覆蓋中東的戰略網，這是伊朗經營多年的核心資產。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2: History Timeline -->
+        <section class="mb-32">
+            <h3 class="text-iran-gold font-display font-bold text-lg mb-2">CHAPTER 02</h3>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-16">故事是怎麼開始的？</h2>
+            
+            <div class="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0">
+                <div class="mb-20 relative md:ml-12">
+                    <span class="absolute -left-1.5 md:-left-16 top-1.5 w-3 h-3 bg-iran-accent rounded-full shadow-[0_0_15px_rgba(226,62,87,0.8)]"></span>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/4">
+                            <span class="text-4xl font-display font-black text-iran-accent">1979</span>
+                        </div>
+                        <div class="md:w-3/4 glass-card p-8 rounded-3xl">
+                            <h4 class="text-2xl font-bold mb-3">改變一切的「換班」</h4>
+                            <p class="text-gray-400">伊朗從親美的小老弟變身成反美的「宗教領袖」。德黑蘭從西方的盟友變成了眼中釘。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-20 relative md:ml-12">
+                    <span class="absolute -left-1.5 md:-left-16 top-1.5 w-3 h-3 bg-white/30 rounded-full"></span>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/4">
+                            <span class="text-4xl font-display font-black text-white/30">1980</span>
+                        </div>
+                        <div class="md:w-3/4 glass-card p-8 rounded-3xl">
+                            <h4 class="text-2xl font-bold mb-3">血戰後的「孤狼教育」</h4>
+                            <p class="text-gray-400">學到慘痛教訓：「沒人會幫我。」促使他們練就了一身非對稱作戰的「絕世武功」——自主開發的飛彈與無人機。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:ml-12">
+                    <span class="absolute -left-1.5 md:-left-16 top-1.5 w-3 h-3 bg-iran-gold rounded-full shadow-[0_0_15px_rgba(197,160,89,0.8)]"></span>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/4">
+                            <span class="text-4xl font-display font-black text-iran-gold">2020-2024</span>
+                        </div>
+                        <div class="md:w-3/4 glass-card p-8 rounded-3xl border-iran-gold/20">
+                            <h4 class="text-2xl font-bold mb-3">潛規則被打破了！</h4>
+                            <p class="text-gray-400">從蘇萊曼尼暗殺到 2024 年直接互扔飛彈，影集正從幕後的暗鬥轉向台前的明爭。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3: Perspectives (Bento Grid) -->
+        <section class="mb-32">
+            <h3 class="text-iran-gold font-display font-bold text-lg mb-2">CHAPTER 03</h3>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-12 text-center">路人甲乙丙丁怎麼看？</h2>
+            
+            <div class="bento-grid">
+                <!-- US/West -->
+                <div class="md:col-span-2 md:row-span-2 glass-card p-10 rounded-[2.5rem] flex flex-col justify-between hover:bg-white/5 transition-all duration-700">
+                    <div>
+                        <span class="text-iran-accent text-xs tracking-tighter font-display font-bold mb-4 block">PERSPECTIVE A</span>
+                        <h4 class="text-3xl font-bold mb-6">西方視角 (US & Allies)</h4>
+                    </div>
+                    <p class="text-gray-400 text-lg">將伊朗視為「地區火藥桶」，主張用極限施壓（Maximum Pressure）與經濟制裁將其鎖死，防止核擴散。</p>
+                </div>
+                
+                <!-- Iran -->
+                <div class="md:col-span-2 glass-card p-10 rounded-[2.5rem] bg-iran-gold/5 border-iran-gold/30">
+                    <h4 class="text-2xl font-bold mb-4 text-iran-gold">伊朗自視</h4>
+                    <p class="text-gray-300">認為自己是在玩「戰略縱深」。支持代理人與發展飛彈是防止被西方霸凌的「防禦性手段」。</p>
+                </div>
+
+                <!-- Global -->
+                <div class="md:col-span-1 glass-card p-8 rounded-[2.5rem]">
+                    <h4 class="text-xl font-bold mb-3">國際社會</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">最怕霍爾木茲海峽被封鎖——畢竟誰也不想因為中東打架而加不到便宜汽油。</p>
+                </div>
+
+                <!-- Israel -->
+                <div class="md:col-span-1 glass-card p-8 rounded-[2.5rem] border-iran-accent/20">
+                    <h4 class="text-xl font-bold mb-3 text-iran-accent">以色列</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">伊朗核武是「生存威脅」的紅線。這不是戰略競爭，而是誰能活下去的零和遊戲。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 4: Controversy -->
+        <section class="mb-32">
+            <div class="bg-white rounded-[3rem] p-12 md:p-20 text-black">
+                <h3 class="text-iran-accent font-display font-bold text-lg mb-2">CHAPTER 04</h3>
+                <h2 class="text-4xl md:text-6xl font-black mb-12 leading-tight">大家都在爭什麼？<br/><span class="text-gray-400">熱議核心點</span></h2>
+                
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="text-4xl font-black text-iran-accent/20">01</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-2">洗衣機還是原子彈？</h4>
+                            <p class="text-gray-600">伊朗堅稱其核計畫是為了發電與醫療，但國際原子能總署看著那些高純度的濃縮鈾，臉色比墨水還黑。</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="text-4xl font-black text-iran-accent/20">02</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-2">誰才是老闆？</h4>
+                            <p class="text-gray-600">哈瑪斯與真主黨到底是伊朗遙控的「傀儡」，還是具有自主意識的「合夥人」？目前的學術界爭論不休。</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="text-4xl font-black text-iran-accent/20">03</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-2">制裁真的有用嗎？</h4>
+                            <p class="text-gray-600">這層皮粗肉厚的抗壓性，讓西方的制裁手段顯得有些邊際效應遞減，甚至促使了「反西方聯盟」的形成。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 5: Future -->
+        <section class="mb-32">
+            <h3 class="text-iran-gold font-display font-bold text-lg mb-2">PREVIEW</h3>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-16">下集預告：未來的戰爭長怎樣？</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="group p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl overflow-hidden transition-all duration-500 hover:from-iran-gold/40 hover:to-iran-accent/40">
+                    <div class="bg-iran-dark h-full p-8 rounded-[1.4rem]">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+                            <span class="w-2 h-2 bg-iran-gold rounded-full"></span>
+                            「低成本」戰爭變主流
+                        </h4>
+                        <p class="text-gray-400">幾千塊的無人機群就能癱瘓昂貴的防空系統。這場「非對稱戰爭」正在重新定義軍事成本。</p>
+                    </div>
+                </div>
+                <div class="group p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl overflow-hidden transition-all duration-500 hover:from-iran-gold/40 hover:to-iran-accent/40">
+                    <div class="bg-iran-dark h-full p-8 rounded-[1.4rem]">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+                            <span class="w-2 h-2 bg-iran-gold rounded-full"></span>
+                            區域衝突全球化
+                        </h4>
+                        <p class="text-gray-400">當伊朗無人機出現在烏克蘭，中東問題就與歐洲安全連在一起。這是全球大國博弈的一環。</p>
+                    </div>
+                </div>
+                <div class="group p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl overflow-hidden transition-all duration-500 hover:from-iran-gold/40 hover:to-iran-accent/40">
+                    <div class="bg-iran-dark h-full p-8 rounded-[1.4rem]">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+                            <span class="w-2 h-2 bg-iran-gold rounded-full"></span>
+                            最後的攤牌
+                        </h4>
+                        <p class="text-gray-400">外交談判的時鐘滴答作響。我們將目睹戲劇進入「擁核」或「空襲」的二選一抉擇。</p>
+                    </div>
+                </div>
+                <div class="group p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl overflow-hidden transition-all duration-500 hover:from-iran-gold/40 hover:to-iran-accent/40">
+                    <div class="bg-iran-dark h-full p-8 rounded-[1.4rem]">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+                            <span class="w-2 h-2 bg-iran-gold rounded-full"></span>
+                            網軍比砲兵更重要
+                        </h4>
+                        <p class="text-gray-400">未來的戰場在雲端。癱瘓電力、水務與金融系統，將成為比佔領領土更高效的打擊手段。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="mt-40 mb-20 text-center">
+            <div class="inline-block p-[2px] bg-gradient-to-r from-iran-gold to-iran-accent rounded-full mb-10">
+                <button class="bg-iran-dark px-8 py-4 rounded-full font-bold text-white transition-all hover:bg-transparent">
+                    💡 想知道更多中東冷知識嗎？
+                </button>
+            </div>
+            <p class="text-iran-muted max-w-xl mx-auto italic">
+                下一篇我們來聊聊：為什麼伊朗的無人機能賣到全世界？這背後到底藏著什麼黑科技與商業邏輯？
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Cursor/Scroll Animation Elements -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50">
+        <div id="progress" class="h-full bg-iran-gold shadow-[0_0_10px_#C5A059]" style="width: 0%"></div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+
+        // Smooth reveal on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
